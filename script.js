@@ -16,9 +16,8 @@ function loadNewQuote() {
 }
 
 $(document).ready(function() {
+  $(".container-fluid").delegate("#quoteButton",'click', function()   {
 	loadNewQuote();
-});
-
-$("#quoteButton").on('click', function() {
+  });
 	loadNewQuote();
 });
