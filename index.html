@@ -5,22 +5,34 @@
 	<title>fetch-me-a-quote</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href=style.css>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/651d0c34e3.js"></script>
 	<script src="script.js"></script>
 </head>
 
 <body>
-	<div class="container-fluid" id="background">
-		<div id="quoteContainer">
-			<div id="quote">
-				I'm a quote
-			</div>
-			<div id="author">
-				-author
-			</div>
-		</div>
-		<button id="quoteButton">Fetch me another quote</button>
-	</div>
+    <div id="content" class="w3-container">
+      <div id="area" class="container-fluid">
+      <b><div id="quote" class="container-fluid">
+        </div></b>
+      <b><div id="author" class="container-fluid">
+        </div></b>
+      </div>
+    </div>
+  <center class="buttons">
+      <a id="quoteButton" class="btn">
+        <span class="glyphicon glyphicon-random"></span>
+      </a>
+      <!--<a id="twitterButton" class="btn">
+        <span class="fa fa-twitter"></span>
+      </a>-->
+        <a id="infoButton" class="btn">
+          <span class="glyphicon glyphicon-info-sign"></span>
+        </a>
+  </center>
 </body>
