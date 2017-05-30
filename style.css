@@ -23,22 +23,21 @@ body {
 #area {
   color: black;
   background-color: white;
-  border: 25px solid black;
-  width: 600px;
+  border: 3px solid black;
+  width: 800px;
   margin-top: 100px;
-  padding: 100px;
+  padding: 75px;
   transition: border 1s;
   border-radius: 75px;
-  transition: all 1s;
 }
 
 #quote {
-  font-size: 35px;
+  font-size: 20px;
   display: inline-block;
 }
 
 #author {
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -57,12 +56,28 @@ body {
     background-color: white;
     font-size: 45px;
     color: black;
-    transition: all .3s;
+    transition: background-color .3s;
 }
 .btn:hover {
   background-color: black;
   color: white;
   text-decoration: none;
   box-shadow: ;
+}
+
+@media screen and (max-width: 650px) {
+  #area {
+    width: 100vw;
+    border-radius: 0px;
+    border: none;
+    margin-top: 50px;
+  }
+  .btn {
+    width: 100vw;
+    display: inline-block;
+    border-radius: 0px;
+    margin: 0px;
+    border: none;
+  }
 }
 

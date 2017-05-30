@@ -12,7 +12,6 @@ function loadNewBackgroundAndTextColor() {
   var tgreen = 255 - bgreen;
   var tblue = 255 - bblue;
   $("body").css("background-color", "rgba(" + bred + ", " + bgreen + ", " + bblue + ", " + ".9" + ")");
-  $("#area").css("border", "3px solid black");
 }
 
 function loadNewQuote() {
@@ -62,8 +61,10 @@ $(document).ready(function() {
 	$("#quoteButton").on('click', function() {
 		loadNewQuote();
 		loadNewBackgroundAndTextColor();
+    $('#area').css("text-align", "left");
 	});
 	$("#infoButton").on('click', function() {
+    $('#area').css("text-align", "center");
 		$('#quote').html("Created by <a href=\"https://justinbkoo.github.io/\">Justin Koo</a> using <a href=\"https://quotesondesign.com/api-v4-0/\"><em>Quotes on Design</em></a> API");
 		$('#author').html("Copyright &copy 2017 Justin Koo");
 	});
