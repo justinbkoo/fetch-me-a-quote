@@ -36,7 +36,7 @@ function loadNewQuote() {
 		},
 		error: function() {
 			$('#quote').html("error getting quote");
-			$('#author').html("hey don't blame me");
+			$('#author').html("hey don't blame me - the third party API is no longer available");
 		},
 		cache: false
 	});
